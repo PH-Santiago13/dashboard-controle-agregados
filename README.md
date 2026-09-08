@@ -13,11 +13,21 @@
 
 ## 📌 Sobre o projeto
 
-Trabalho com relatórios de produção de caminhões agregados e sempre senti que os dados podiam contar uma história melhor do que planilhas estáticas. Decidi então construir, **do zero**, um dashboard de BI para monitorar a performance operacional e financeira de uma frota.
+### 🩹 O problema
 
-Uma transportadora precisava monitorar a margem de lucro, mas não tinha visibilidade clara sobre esses valores — os dados estavam espalhados em planilhas com muitas colunas, e ninguém conseguia responder rápido a perguntas simples como *"qual rota hoje é mais lucrativa?"*.
+Na transportadora onde trabalho, o controle de frete e margem de lucro por viagem vivia espalhado em planilhas com dezenas de colunas. Não existia uma resposta rápida para perguntas simples como *"essa rota está dando lucro de verdade?"* ou *"vale a pena mandar uma carreta pra esse trajeto?"*. A decisão de qual veículo alocar em qual rota dependia da experiência de quem olhava a planilha — não de um número confiável e comparável.
+
+### 🛠️ A solução
+
+Construí, do zero, um dashboard em Power BI que centraliza viagens, frete, KM rodado e margem de lucro num modelo Star Schema, com medidas DAX de comparação mês a mês. Qualquer pessoa da operação consegue, em segundos, ver a margem por rota e por tipo de veículo — sem precisar abrir planilha nenhuma ou pedir pra alguém cruzar os dados manualmente.
 
 > ⚠️ **Nota de confidencialidade:** todos os dados utilizados são **100% fictícios**, gerados por mim para permitir o compartilhamento público sem expor qualquer informação real da empresa.
+
+### 📈 O resultado
+
+O dashboard revelou que as **carretas** — o tipo de veículo com maior volume de frete movimentado — têm a **pior margem de lucro proporcional** entre os veículos analisados. É o tipo de informação que fica escondida numa planilha crua e só aparece quando se compara volume lado a lado com rentabilidade.
+
+> 📊 **Estimativa** (baseada nos números deste modelo — que usa dados fictícios, não uma economia real auditada): se a operação redirecionasse parte do frete hoje concentrado em carretas de baixa margem para veículos com melhor relação custo/benefício na mesma rota, o ganho de margem mensal poderia ficar na faixa de **alguns milhares de reais**. Não é um valor exato — é uma estimativa ilustrativa do tipo de decisão de alocação de frota que passa a ser possível quando existe visibilidade de dado, em vez de decisão por "feeling".
 
 **Pergunta de negócio central:** *Como está a performance de frete da frota — qual a margem de lucro por rota, por tipo de veículo, e como a receita evolui mês a mês?*
 
