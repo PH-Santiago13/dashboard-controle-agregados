@@ -172,7 +172,6 @@ A paleta azul e verde (petróleo/turquesa) foi escolhida por transmitir modernid
 Analista de Dados e Custos Logísticos | Power BI · SQL · Excel
 
 - 🔗 LinkedIn: [linkedin.com/in/hpaulo13](https://www.linkedin.com/in/hpaulo13/)
-- 📊 Dashboard publicado (Power BI Service): [Acessar relatório](https://app.powerbi.com/groups/me/reports/4b148865-fca5-4d98-9480-a2d3d187bc23?ctid=f310b526-e195-4805-a55e-67e28f2fefdb&pbi_source=linkShare)
 - 📧 hpaulo669.ph@gmail.com
 
 Este é o primeiro de uma série de projetos de portfólio construídos durante minha transição de carreira para Análise de Dados / Business Intelligence. **Próximo projeto:** análise de dados públicos reais do Tesouro Direto, com pipeline SQL (MySQL) + Power BI.
