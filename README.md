@@ -15,13 +15,13 @@
 
 ### 🩹 O problema
 
-Na transportadora onde trabalho, o controle de frete e margem de lucro por viagem vivia espalhado em planilhas com dezenas de colunas. Não existia uma resposta rápida para perguntas simples como *"essa rota está dando lucro de verdade?"* ou *"vale a pena mandar uma carreta pra esse trajeto?"*. A decisão de qual veículo alocar em qual rota dependia da experiência de quem olhava a planilha — não de um número confiável e comparável.
+Este projeto parte de um cenário fictício: uma transportadora de médio porte que controla frete e margem por viagem em planilhas com dezenas de colunas. Sem uma visão consolidada, perguntas simples como “essa rota está dando lucro de verdade?” ou “vale a pena mandar uma carreta pra esse trajeto?” ficavam sem resposta rápida, e a escolha do veículo para cada rota dependia da experiência de quem olhava a planilha, não de um número confiável e comparável. A empresa, as rotas e os dados são inventados; escolhi o setor de transporte rodoviário de cargas por ser um domínio que conheço.
 
 ### 🛠️ A solução
 
 Construí, do zero, um dashboard em Power BI que centraliza viagens, frete, KM rodado e margem de lucro num modelo Star Schema, com medidas DAX de comparação mês a mês. Qualquer pessoa da operação consegue, em segundos, ver a margem por rota e por tipo de veículo — sem precisar abrir planilha nenhuma ou pedir pra alguém cruzar os dados manualmente.
 
-> ⚠️ **Nota de confidencialidade:** todos os dados utilizados são **100% fictícios**, gerados por mim para permitir o compartilhamento público sem expor qualquer informação real da empresa.
+> ⚠️ **Nota de confidencialidade:** todos os dados utilizados são **100% fictícios**, gerados por mim. 
 
 ### 📈 O resultado
 
@@ -40,7 +40,7 @@ O painel foi construído para responder, de forma direta, às seguintes pergunta
 - Qual o frete total e como ele variou mês a mês?
 - Quais rotas dão mais lucro?
 - Qual tipo de veículo tem maior margem de lucro?
-- A margem de lucro está dentro dos parâmetros estabelecidos pela empresa?
+- A margem de lucro está dentro da meta de margem definida no cenário (ex.: 14%)?
 
 ---
 
@@ -128,7 +128,7 @@ DIVIDE(
 
 ### Design e experiência
 
-A paleta azul e verde (petróleo/turquesa) foi escolhida por transmitir modernidade e segurança — valores que a transportadora preza. Os cartões de KPI foram posicionados no topo para leitura rápida das métricas principais antes do usuário entrar no detalhe. A escolha dos gráficos seguiu a lógica da pergunta que cada um responde: linhas para mostrar tendência do frete ao longo do tempo, e barras para comparar rotas e veículos entre si.
+A paleta azul e verde (petróleo/turquesa) foi escolhida por transmitir modernidade e segurança — transmitir modernidade e confiança, adequado ao setor de logística. Os cartões de KPI foram posicionados no topo para leitura rápida das métricas principais antes do usuário entrar no detalhe. A escolha dos gráficos seguiu a lógica da pergunta que cada um responde: linhas para mostrar tendência do frete ao longo do tempo, e barras para comparar rotas e veículos entre si.
 
 ---
 
@@ -143,7 +143,7 @@ A paleta azul e verde (petróleo/turquesa) foi escolhida por transmitir modernid
 
 ## 🚀 Como foi construído
 
-1. **Levantamento de requisitos** — definição das perguntas de negócio junto à operação.
+1. **Levantamento de requisitos** — definição das perguntas de negócio a partir do cenário simulado.
 2. **Geração da base fictícia** — planilha com centenas de registros de viagens.
 3. **Modelagem** — separação em tabela fato e dimensões (Star Schema).
 4. **Transformação** — tratamento e relacionamento dos dados no Power Query.
@@ -155,7 +155,7 @@ A paleta azul e verde (petróleo/turquesa) foi escolhida por transmitir modernid
 
 ## 🔭 Próximos passos
 
-- **Alertas automáticos:** disparar um aviso (via Power BI ou automação com n8n) sempre que a margem de uma rota cair abaixo do parâmetro estabelecido pela empresa, em vez de depender de alguém abrir o dashboard para notar.
+- **Alertas automáticos:** disparar um aviso (via Power BI ou automação com n8n) sempre que a margem de uma rota cair abaixo da meta de margem definida no cenário (ex.: 15%), em vez de depender de alguém abrir o dashboard para notar.
 - **Cruzamento com custo de manutenção:** incorporar o custo de manutenção por caminhão à análise, trazendo uma visão de lucro ainda mais realista além do custo de combustível.
 
 ---
