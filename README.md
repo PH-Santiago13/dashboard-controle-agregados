@@ -48,7 +48,7 @@ O painel foi construído para responder, de forma direta, às seguintes pergunta
 
 | Categoria | Tecnologias |
 |---|---|
-| Visualização & Modelagem | Power BI Desktop, Power BI Service |
+| Visualização & Modelagem | Power BI Desktop |
 | Linguagem de Medidas | DAX (Data Analysis Expressions) |
 | Modelagem de Dados | Star Schema (Esquema Estrela) |
 | Preparação de Dados | Excel Avançado, Power Query |
@@ -137,7 +137,7 @@ A paleta azul e verde (petróleo/turquesa) foi escolhida por transmitir modernid
 - As **carretas** movimentam mais frete do que os outros tipos de veículo, porém apresentam a pior margem de lucro — evidenciando que volume não é sinônimo de rentabilidade.
 - A oscilação no frete total mês a mês revela os períodos de maior demanda da transportadora, permitindo um planejamento melhor para o ano seguinte.
 - Foi possível identificar quais rotas têm o maior KM percorrido, ajudando a evitar o envio de veículos maiores (com maior custo de combustível) sem necessidade real.
-- Dashboard funcional, publicado no Power BI Service, com modelo escalável que pode incorporar novos dados sem retrabalho.
+- Dashboard funcional, com modelo escalável que pode incorporar novos dados sem retrabalho.
 
 ---
 
@@ -149,7 +149,6 @@ A paleta azul e verde (petróleo/turquesa) foi escolhida por transmitir modernid
 4. **Transformação** — tratamento e relacionamento dos dados no Power Query.
 5. **Medidas DAX** — criação das métricas de negócio e inteligência de tempo.
 6. **Design** — construção do layout, escolha dos visuais e polimento.
-7. **Publicação** — deploy no Power BI Service.
 
 ---
 
